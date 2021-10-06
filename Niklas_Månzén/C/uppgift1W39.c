@@ -3,7 +3,7 @@
 int main(void)
 {
 
-printf("Aj då!\a");
+printf("Aj då!");
 return 0;
 
 }
