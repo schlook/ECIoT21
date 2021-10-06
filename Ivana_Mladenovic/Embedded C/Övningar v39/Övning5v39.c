@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main (void)
+{
+char punkt='.', streck='-';
+printf("%c%c%c", punkt, punkt, punkt);
+printf("%c%c%c", streck, streck, streck);
+printf("%c%c%c", punkt, punkt, punkt);
+return 0;
+}
