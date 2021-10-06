@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+//skapar en mall för de attribut en medlem ska ha
 struct medlem
 {
     char fnamn[15];
@@ -10,7 +11,7 @@ struct medlem
     char adress[20];
     char ort[15];
 };
-
+//får en strukt som argument för att spara inmatningen av kundens uppgifter
 void dinaUppgifter (struct medlem kund[],int num)
 {
     printf("Fornamn: ");
@@ -24,9 +25,9 @@ void dinaUppgifter (struct medlem kund[],int num)
     printf("ort: ");
     scanf("%s",kund[num].ort);
 }
-
+//Skriver ut på konsolen kundens uppgifter
 void printUppgifter (struct medlem kund[],int num)
-{
+{   //Se över funktion fungerar inte som de ska kontrollera om array struct är tom 
     if( kund[num].enamn == '0/' )
     {
         printf("Ingen uppgifter \n");
@@ -39,7 +40,7 @@ void printUppgifter (struct medlem kund[],int num)
         printf("Ort: %s\n",kund[num].ort);
     }
 };
-
+//skriver ut menyn på konsolen
 void meny()
 {
     printf("\n**********Bankomat**********\n\n");
@@ -51,18 +52,18 @@ void meny()
     printf("6. logga ut\n\n");
     printf("****************************\n");
 }
-
+//visar kundens saldo på konsolen 
 void seSaldo(int s)
 {
     printf("Ditt saldo ar: %d\n\n",s);
 }
-
+// arggument som pointer för att ändra saldo minus de kunden vill ta ut 
 void taUt(int *saldo)
 {
     int a;
     printf("Hur mycket vill du ta ut: ");
     scanf(" %d",&a);
-
+    // om saldo är mindre än 0 de går inte att ta ut pengar 
     if((*saldo - a)> 0)
     {
     *saldo = *saldo - a;
@@ -70,7 +71,7 @@ void taUt(int *saldo)
     {
     printf("lagt saldo\n");
     };
-}
+}   //kontrollerar saldo och adderar de kunden vill sätta in 
 void sattIn(int *saldo)
 {
     int a;
@@ -80,12 +81,17 @@ void sattIn(int *saldo)
 }
 
 int main()
-{
+{   //kundens saldo satt till 10 000
     int medlemsnummer = 0;
     int saldo = 10000;
     int val;
     struct medlem kund[10];
-
+    
+    /*
+    Vi har en loop som minst görs en gång såkallad do while.
+    vi frågar kunden efter va dom vill göra och väljer
+    rätt funktion i switchen. */
+    
     do{
     meny();
     printf("option: ");
