@@ -28,3 +28,4 @@ int main(void)
         printf("Du har gjort fel val! Försök igen (N, S, V, Ö)!");
         break;
     }
+}
