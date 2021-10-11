@@ -1,23 +1,18 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+
 int main(){
-    int i = 0;
+    int i;
+    for (i = 0; i <= 15; i++){
 
-    while(i <= 15){
-        if(i = 0|5|10){
-            printf("Baby Shark");
-            i++;
-
+        if(i == 0 || i == 5 || i == 10){
+            printf("Baby Shark ");
         }
-        if(i = 4|9|14){
+        if(i == 4 || i == 9 || i == 14){
             printf("\n");
-            i++;
-            
         }
-        else{
-            printf("Do");
-            i++;
-        }
+        printf("Do ");
     }
+
 }
