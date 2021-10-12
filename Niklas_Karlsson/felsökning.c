@@ -1,13 +1,10 @@
-#include <stdio.h>
-#include <stdbool.h>
-
 /* 
  * Den här delen kan ni ignorera
  */
 #ifdef _WIN32
 #include <windows.h>
 #else
-#include <unistd.h>
+
 #define Sleep(x)    \
   usleep(x * 1000); \
   fflush(stdout);
@@ -17,6 +14,10 @@
  * Börja felsök härifrån
  * ------------------------
  */
+
+#include <stdio.h>
+#include <stdbool.h>
+
 // Var-Variabeln
 int var;
 
