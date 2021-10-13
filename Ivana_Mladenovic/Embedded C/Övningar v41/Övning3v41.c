@@ -9,7 +9,7 @@ int main(void)
 }
 float kalkyleraSumma(float nummer[])
 {
-    float summa;
+    float summa=0.0;
     for (int i = 0; i < 6; i++)
     {
         summa +=nummer[i];
