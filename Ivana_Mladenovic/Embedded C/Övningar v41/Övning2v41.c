@@ -15,5 +15,5 @@ void inmatning(void)
 }
 void utskrift(void)
 {
-    printf("Ditt namn är %s", namn);
+    printf("Hejsan %s!", namn);
 }
