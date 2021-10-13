@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main(void)
-{
+{   //Om jag lägger in '\0' som avslut i arrayen får jag varning
     char mychar[]={'B', 'a', 'b', 'y', 's', 'h', 'a', 'r', 'k'};
     for(int i=0; i<=(sizeof(char)/sizeof(mychar[0])); i++)
     {
