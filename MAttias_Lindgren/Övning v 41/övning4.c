@@ -2,11 +2,12 @@
 // global fältvariabel float med argument
 float mittTal (float num[]);
 
+#define STORLEK 9
 
 int main ()
 {
     //deklaration utav variabeln resultat
-float resultat , num[] = {11, 13 ,2 , 4};
+float resultat , num[STORLEK] = {11, 13 ,2 , 4};
 
 // resultat = function , skrvier ut med 2 decimaler
 resultat = mittTal(num); 
@@ -17,7 +18,7 @@ printf("resultat = %.2f", resultat);
 float mittTal (float num [])
 {
   float sum; 
-  for (int i = 0; i < 9; i++)
+  for (int i = 0; i < STORLEK; i++)
   {
       //uträckningen i functionen
       sum += num[i];
