@@ -18,7 +18,7 @@ int main(void)
     }
     for (int i = 0; i < antal; i++)
     {
-        //j=i+1 f”ratt kunna j„mf”ra i med f”reg†ende tal
+        //j=i+1 f”r att kunna j„mf”ra i med f”reg?ende tal
         for (int j = i+1; j < antal; j++)
         {
             if(myFelt[i] == myFelt[j])
