@@ -1,11 +1,11 @@
 #include <stdio.h>
-//funktion f”r utskrift
-//tar emot f„ltvariabeln och dess l„ngd
+//funktion för utskrift
+//tar emot fältvariabeln och dess längd
 void skrivUtFelt(int felt[], int lengd);
 int main(void)
 {
     int antal;
-    printf("Ange antal f„lt: ");
+    printf("Ange antal fält: ");
     scanf("%d",&antal);
     int even[antal];
     int odd[antal];
@@ -13,14 +13,14 @@ int main(void)
     int countOdd=0;
     for (int i = 1; i <= antal; i++)
     {
-        //modulus f”r att kontrollera om det finns n†got restv„rde
-        //om restv„rde finns sparas elementet i f„ltet f”r udda nummer
+        //modulus för att kontrollera om det finns något restvärde
+        //om restvärde finns sparas elementet i fältet för udda nummer
         if((i%2)==1)
         {
             odd[countOdd]=i;
             countOdd ++;
         }
-        //finns det inget restv„rde sparas elementet i f„ltet f”r j„mna nr
+        //finns det inget restvärde sparas elementet i fältet för jämna nr
         else
         {
             even[countEven]=i;
@@ -35,10 +35,10 @@ int main(void)
     return 0;
 }
 
-// skriv ut f„lten
+// skriv ut fälten
 void skrivUtFelt(int felt[], int lengd)
 {
-    /// Skriver ut ett nummer f”r varje varv 
+    /// Skriver ut ett nummer för varje varv 
     for (int i = 0; i < lengd; i++)
     {
         printf("%d ", felt[i]);     
