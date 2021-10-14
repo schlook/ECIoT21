@@ -13,7 +13,7 @@ int main(void)
     {
         //i+1 för att första elementet inte ska visas som 0 för användaren 
         //%d visar då 1 som första osv
-        printf("Ange %d v„rde: ",(i+1));
+        printf("Ange %d värde: ",(i+1));
         scanf("%d",&myFelt[i]);
     }
     for (int i = 0; i < antal; i++)
