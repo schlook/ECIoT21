@@ -23,7 +23,8 @@ int main(void)
         {
             if(myFelt[i] == myFelt[j])
             {
-            dubblett ++;
+                //r„knar antal ggr n„r i och j „r lika med varandra
+                dubblett ++;
             }
         }
         
