@@ -4,7 +4,7 @@ int main(void)
 {
     int antal;
     float myFloat[antal];
-    printf("Ange antal f„lt: ");
+    printf("Ange antal fâ€lt: ");
     scanf("%d", &antal);
     for (int i = 0; i < antal; i++)
     {
@@ -14,7 +14,7 @@ int main(void)
         if(i>0)
         myFloat[i]=myFloat[i-1]+5.5;
     }
-    printf("Dina f„lt har f†tt f”ljande v„rden: \n");
+    printf("Dina fâ€lt har fâ€ tt fâ€ljande vâ€rden: \n");
     for (int i = 0; i < antal; i++)
     {
         printf("myFloat[%d]=%.2lf\n", i, myFloat[i]);

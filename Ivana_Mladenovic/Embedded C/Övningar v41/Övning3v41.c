@@ -14,6 +14,6 @@ float kalkyleraSumma(float nummer[])
     {
         summa +=nummer[i];
     }
-    printf("Resultat „r: %f",summa);
+    printf("Resultat Ã¤r: %f",summa);
     printf("=%.2f",summa);
 }

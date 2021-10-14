@@ -2,7 +2,7 @@
 #define BUF 6
 void utskrift(void);
 float kalkylSumma(float inmatning[]);
-//arrayen f†r en storlek som „r lika med BUF
+//arrayen fâ€ r en storlek som â€žr lika med BUF
 float inmatning[BUF]={};
 int main(void)
 {
@@ -15,15 +15,15 @@ int main(void)
 void utskrift(void)
 {
     for (int i = 0; i < BUF; i++)
-    {   //i+1 ”ka indexet med 1 f”r att l„gga inmatningen en efter en i f”ljd 1-6
-        printf("Ange %d v„rde(decimaler separeras med punkt '.'): ",i+1 );
+    {   //i+1 â€ka indexet med 1 fâ€r att lâ€žgga inmatningen en efter en i fâ€ljd 1-6
+        printf("Ange %d vâ€žrde(decimaler separeras med punkt '.'): ",i+1 );
         scanf("%f", &inmatning[i]);
     }
 
 }
 float kalkylSumma(float inmatnng[])
-{   //summa f†r v„rde 0 f”r att vara p† dn s„kra sidan 
-    //att den inte ska inneh†lla n†got kvar fr†n f”rra inmatningen
+{   //summa fâ€ r vâ€žrde 0 fâ€r att vara pâ€  dn sâ€žkra sidan 
+    //att den inte ska innehâ€ lla nâ€ got kvar frâ€ n fâ€rra inmatningen
     float summa=0.0;
     for (int i = 0; i < BUF; i++)
     {
