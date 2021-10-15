@@ -14,7 +14,7 @@ int main(void)
         printf("Ange %d värdet:\n", i + 1);
         scanf("%f", &input[i]);
     }
-    
+    // kör funktionen och tillger result det värde funktionen sumOfNumbers returnernar
     result = sumOfNumbers(input);
     printf("Summan av värdena blir: %.2f\n", result);
     return 0;
