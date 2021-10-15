@@ -8,7 +8,7 @@
         scanf("%d", &num);
         // declare array, input 'num' sets number of elements
         float theArray[num];
-        // set a = 5.5, will be our first element in the Array
+        // set a = 5.5, will be the value of our first element in the Array
         float a = 5.5;  
         // Loop til we have filled the number of elements
         for (int i = 0; i < num; i++)
