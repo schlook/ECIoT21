@@ -1,3 +1,10 @@
 {
+<<<<<<< HEAD
+    "files.associations": {
+        "windows.h": "c",
+        "stdbool.h": "c"
+    }
+=======
     "C_Cpp.errorSquiggles": "Disabled"
+>>>>>>> 0039604fd82500f3e6e416fd4a6da0a5e76c772b
 }

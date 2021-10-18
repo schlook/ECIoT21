@@ -49,8 +49,10 @@ int myfunction(int var)
   int var2 = 23, sum;
   // Slår ihop var med var2
   sum = var + var2;
+
+  var2 = 44;
   // Ger tillbaka svaret, kom på att vi behöver en double!
-  return (double)sum;
+  return (double)sum + var2;
 }
 
 // Funktionen tar ej emot argument
