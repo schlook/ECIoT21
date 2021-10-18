@@ -2,12 +2,12 @@
 int main(void)
 {
     int rader;
-        printf("Ange Ã¶nskat antal rader: ");
+        printf("Ange önskat antal rader: ");
         scanf("%d", &rader);
-    //fÃ¶r i lika med 0; i mindre eller lika med antal rader; Ã¶ka med 1
+    //för i lika med 0; i mindre eller lika med antal rader; öka med 1
     for (int i = 1; i <=rader; i++)
     {
-        //fÃ¶r j lika med 1; j mindre eller lika med i; j Ã¶ka med 1
+        //för j lika med 1; j mindre eller lika med i; j öka med 1
         for (int j = 1; j <= i; j++)
         {
             printf("%d ", j);
