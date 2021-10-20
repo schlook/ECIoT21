@@ -59,7 +59,7 @@ void sumAB() // summerar raderna med varandra i a och b
             sum[rad][kolumn] = a[rad][kolumn] + b[rad][kolumn];
         }
     }
-    printf("Summan av a + b:\n");
+    printf("Summan av a + b:\n"); // skriver ut summan av a + b
     for (int rad = 0; rad < STORLEK; rad++)
     {
         for (int kolumn = 0; kolumn < STORLEK; kolumn++)
