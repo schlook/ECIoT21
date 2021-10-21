@@ -1,9 +1,10 @@
 #include <stdio.h>
+//konstant storlek för både rad och kolumn
 #define STRL 3
 int main(void)
 {
     //Användaren skriver första gången
-    int a[STRL][STRL];//skapar 2D fältvariabel
+    int a[STRL][STRL];//skapar 2D fältvariabel a[rad][kolumn]
     //Användaren skriver andra gången
     int b[STRL][STRL];//skapar 2D fältvariabel
     //skapar en 2D för resultat
@@ -18,7 +19,7 @@ int main(void)
             scanf("%d", &a[i][j]);
         }  
     }
-    printf("Mata i nummer för matrisen 'b' %dx%d: \n", STRL, STRL);
+    printf("Mata in nummer för matrisen 'b' %dx%d: \n", STRL, STRL);
     //rad
     for (int i = 0; i < STRL; i++)
     {   //kolumn
