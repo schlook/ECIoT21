@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <windows.h>
 #define BUF 100
 int main(void)
 {
