@@ -13,6 +13,5 @@ int main(void)
         reknare++;
     }
     printf("Strängen '%s' är %d tecken lång!", text, reknare);
-    Sleep(1000);
     return 0;
 }
