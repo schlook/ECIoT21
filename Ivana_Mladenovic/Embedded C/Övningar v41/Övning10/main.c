@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "minfil.h"
 int main(void)
 {
     double num[] = {22, 33, 44.3, 1, 23};
