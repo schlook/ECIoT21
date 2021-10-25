@@ -1,4 +1,4 @@
-double summa(double felt[], int length)
+double Summa(double felt[], int length)
 {
     double sum=0;
     for (int i = 0; i < length; i++)
@@ -8,7 +8,7 @@ double summa(double felt[], int length)
     
     return sum;
 }
-double kvd(double felt[], double length)
+double Kvadrat(double felt[], double length)
 {
     double sum=0;
     for (int i = 0; i < length; i++)
