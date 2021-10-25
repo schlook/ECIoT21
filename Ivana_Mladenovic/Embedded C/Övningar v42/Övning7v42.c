@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <windows.h>
 #define BUF 100
 int main(void)
 {
@@ -12,5 +13,6 @@ int main(void)
         reknare++;
     }
     printf("Strängen '%s' är %d tecken lång!", text, reknare);
+    Sleep(10);
     return 0;
 }
