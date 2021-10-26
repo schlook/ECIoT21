@@ -5,8 +5,8 @@
 #include <windows.h>
 // mySleep blir som ett alias för Sleep (på win)
 #define mySleep(x) Sleep(x)
-// allt annat förutom windows
 
+// allt annat förutom windows, dvs mac
 #else
 #include <unistd.h>
 #define mySleep(x) usleep(x * 10000); //microsecs * 10 000 = (100 = 1sec)
@@ -49,7 +49,7 @@ void meny(void)
     else if (val == 3) // om val = 3 så stängs programmet ner
     {
         printf("Hej då!\n");
-        exit(0);
+        exit(0); // stänger ner programmet
     }
     else // allt annat ger else 
     {
@@ -82,5 +82,5 @@ void showList()
         printf("%s %s\n", fNamn[j], eNamn[j]);
     }
     printf("\n");
-    meny();
+    meny(); // tillbaka till menyn
 }
