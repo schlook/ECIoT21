@@ -3,18 +3,16 @@
 
 #ifdef _WIN32
 #include <windows.h>
-
 // mySleep blir som ett alias för Sleep (på win)
 #define mySleep(x) Sleep(x)
-
-#else
 // allt annat förutom windows
 
+#else
 #include <unistd.h>
-
 #define mySleep(x) usleep(x * 10000); //microsecs * 10 000 = (100 = 1sec)
-#define MAX_LISTA 256
 #endif
+
+#define MAX_LISTA 256
 
 void meny(); // Meny-funktion
 void addMate(); // funktion för att lägga till klasskamrat
