@@ -1,23 +1,23 @@
 #include <stdio.h>
 int main(void)
 {
-    //här sparas inmatning från användaren
+    //hÃ¤r sparas inmatning frÃ¥n anvÃ¤ndaren
     int antal=0;
-    printf("Ange antal fält: ");
+    printf("Ange antal fÃ¤lt: ");
     scanf("%d", &antal);
-    //sparad inmatning används som storlek på fältvariabel
+    //sparad inmatning anvÃ¤nds som storlek pÃ¥ fÃ¤ltvariabel
     int felt[antal];
     for (int i = 0; i < antal; i++)
     {
-        //För varje nytt varv får användaren mata in nytt nr
+        //FÃ¶r varje nytt varv fÃ¥r anvÃ¤ndaren mata in nytt nr
         printf("Ange ett nummer: ");
-        //nummret sparas i fältvariabeln
+        //nummret sparas i fÃ¤ltvariabeln
         scanf("%d", &felt[i]);
     }
-    printf("Nedan får du dina siffror i omvänd ordning:\n ");
-    //i är lika med 'antal'-1(måste skrivas -1 för att räkna bort \0 sista tomma platsen 
-    //annars räknas även den med och skrivs ut med siffran '32767'), 
-    //i är större eller lika med 0, i minskar med 1
+    printf("Nedan fÃ¥r du dina siffror i omvÃ¤nd ordning:\n ");
+    //i Ã¤r lika med 'antal'-1(mÃ¥ste skrivas -1 fÃ¶r att rÃ¤kna bort \0 sista tomma platsen 
+    //annars rÃ¤knas Ã¤ven den med och skrivs ut med siffran '32767'), 
+    //i Ã¤r stÃ¶rre eller lika med 0, i minskar med 1
     for (int i = antal-1; i >= 0; i--)
     {
         printf("%d, ", felt[i]); 
