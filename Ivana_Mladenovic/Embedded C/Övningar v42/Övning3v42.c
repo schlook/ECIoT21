@@ -83,7 +83,7 @@ void utskrift()
     printf("I klasslistan finns: \n");
     for (size_t i = 0; i < total ; i++)
     {
-        printf("%s %s\n", fornamn[i], efternamn[i]);
+        printf("%s %s\n", &fornamn[i], &efternamn[i]);
     }
     fflush(stdin);
     fflush(stdout);
