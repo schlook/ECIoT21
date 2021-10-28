@@ -13,7 +13,7 @@ double Kvadrat(double felt[], double length)
     double sum=0;
     for (int i = 0; i < length; i++)
     {
-        sum=felt[i]*felt[i];
+        sum+=felt[i]*felt[i];
     }
     return sum;
 
