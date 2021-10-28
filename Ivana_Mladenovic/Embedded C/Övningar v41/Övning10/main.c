@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "C:\Users\ivan_\Desktop\ECIoT21\Ivana_Mladenovic\Embedded C\Övningar v41\Övning10\minfil.h"
+#include "minfil.h"
 int main(void)
 {
     double num[] = {22, 33, 44.3, 1, 23};

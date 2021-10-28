@@ -12,6 +12,7 @@ int main(void)
     printf("Skriv din text:\n");
     scanf("%s", &text);
     fprintf(filpkr,"%s", text);
+    //stänger filpekaren
     fclose(filpkr);
     return 0;
 }

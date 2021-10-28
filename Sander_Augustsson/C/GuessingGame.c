@@ -6,16 +6,16 @@
 int main()
 {
     int SecretNumber;
-    int guess=0;
+    int guess;
     int gameover=0;
     int chancelimit=4;
     int sek=0;
     srand(time(NULL)); // Använder tiden för att komma upp med random nummer annars blir det samma nummer varje gång
     SecretNumber=rand() % 16;// gör att rand blir mellan 0 och 15
-    //printf("%d\n",SecretNumber);
+    
     int chances=0;
 printf("Try to guess the random number between 0 and 15, You got 4 guesses\n");
-//printf("%d",SecretNumber); <--för felsökning
+
     while(guess != SecretNumber && gameover == 0) // Om det gissade numret inte är = hemliga numret OCH gamveover inte 1 kör
     {   
         if(chances<chancelimit)
@@ -23,15 +23,16 @@ printf("Try to guess the random number between 0 and 15, You got 4 guesses\n");
             sleep(1);
             scanf("%d",&guess);
             chances++;
-            sleep(1);
          if(guess < SecretNumber)
             {
-                printf("The Secret Number is Higher, You got %d guesses left\n", 4-chances);
+                sleep(1);
+                printf("The Secret Number is Higher, You got %d guesses left\n", chancelimit-chances);
             }
 
             else if(guess > SecretNumber)
             {
-             printf("The Secret Number is lower, You got %d guesses left\n", 3-chances);
+                sleep(1);
+             printf("The Secret Number is lower, You got %d guesses left\n", chancelimit-chances);
             }
         }else
         {

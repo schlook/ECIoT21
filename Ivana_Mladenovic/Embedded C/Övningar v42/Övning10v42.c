@@ -20,11 +20,12 @@ int main()
     printf("Värde av c = %s\n", c);
     fclose(filpkr);
 
-    // Börjar om med fp
+    // Börjar om med filpekaren, öppnar den får skriv/write
     filpkr = fopen("ovning.txt", "w");
     printf("Skriv in nytt ord:\n");
 
     char text[256];
+    //nytt text sparas in
     scanf("%s", &text);
 
     fprintf(filpkr, "%s", &text);
