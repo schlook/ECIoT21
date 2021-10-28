@@ -7,7 +7,7 @@ int main (void)
     scanf("%d", &numArr);
     printf("You set it to %d values in total\n", numArr);
 
-    int myArray[numArr]; // declare array and initiate with userinput (num)
+    int myArray[numArr]; // declare array and initiate with userinput (numArr)
     
     for (int i = 0; i < numArr; i++) // fill myArray with userinput values
     {
