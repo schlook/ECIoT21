@@ -26,3 +26,5 @@ int main(void)
     printf("Moms: %7.2f\n", mo);
     return 0;
 }
+
+// hej ivana ;) / William
