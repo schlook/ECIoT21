@@ -31,7 +31,7 @@ int main()
     */
 
     // kommentera ut nedan om du har längre strängar
-    fscanf(fp, "%s", &c);
+    fscanf(fp, "%s", c);
     printf("Värde av c = %s", c);
     // fram till hit
     fclose(fp);
