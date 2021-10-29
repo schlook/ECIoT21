@@ -18,7 +18,7 @@ void example1(char myArray[])
 {
     for (int i = 0; myArray[i] != '\0'; i++)
     {
-        // %c för char, newVae [i] = går igenom fältvariabeln tills dess att slutet är nått, dvs '\o'
+        // %c för char, myArray [i] = går igenom fältvariabeln tills dess att slutet är nått, dvs '\o'
         printf("%c", myArray[i]);
     }
     printf("\n");
