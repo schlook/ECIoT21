@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 int main(void)
 {
     // Sätt variabler, pris, exkl moms
@@ -24,7 +25,6 @@ int main(void)
     // Och vad momsen är (i kronor)
     printf("Pris exkl moms: %7.2f\n", ex);
     printf("Moms: %7.2f\n", mo);
+
     return 0;
 }
-
-// hej ivana ;) / William
