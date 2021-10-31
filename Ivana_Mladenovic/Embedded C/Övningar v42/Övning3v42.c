@@ -29,6 +29,7 @@ int meny(void)
             break;
         default:
             printf("Du har angett fel val. Vänligen försök igen.");
+            //för att rensa inmatning
             fflush(stdin);
             fflush(stdout);
             meny();
@@ -37,22 +38,19 @@ int meny(void)
 }
 void inmatning()
 { 
+    int i =0;
     printf("Ange förnamn:\n");
-    int i=0;
-    if(fornamn[i] <= BUF) 
+    if (fornamn[i] != '\0')
     {
         scanf("%s", &fornamn[i][BUF]);
         i++;
     }
-    printf("Ange efterrnamn:\n");
-    if(efternamn[i] <= BUF)
+    printf("Ange efternamn:\n");
+    if(efternamn[i] != '\0')
     {
-        scanf("%s", &efternamn[i][BUF]);
+        scanf("%s", &fornamn[i][BUF]);
         i++;
     }
-    
-    fflush(stdin);
-    fflush(stdout);
     meny();
 
 }
@@ -81,9 +79,9 @@ void utskrift()
     }
     //skriver ut hela listan via for-loopen
     printf("I klasslistan finns: \n");
-    for (size_t i = 0; i < total ; i++)
+    for (size_t i = 0; i < total; i++)
     {
-        printf("%s %s\n", &fornamn[i], &efternamn[i]);
+        printf("%s %s\n", fornamn[i], efternamn[i]);
     }
     fflush(stdin);
     fflush(stdout);
