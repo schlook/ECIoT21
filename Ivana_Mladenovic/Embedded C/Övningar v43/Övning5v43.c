@@ -1,6 +1,6 @@
 #include <stdio.h>
 //enum får namn 'färg'
-enum farg{spader = 0, ruter = 10, hjarter = 20, klever = 3};
+typedef enum farg{spader = 0, ruter = 10, hjarter = 20, klever = 3};
 
 int main(void)
 {

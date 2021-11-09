@@ -1,11 +1,11 @@
 #include <stdio.h>
 int main(void)
 {
-    char text[200];
+    char text[20];
     int start, mitt, slut, lengd=0;
     printf("Skriv ett ord du tror är palindrom: \n");
-    scanf("%s", &text);//FUNKAR INTE, FRYSER EFTER INPUT!!
-    while(text[lengd] != '\0');
+    scanf("%s", &text);
+    while(text[lengd] != '\0')
     {
         //räknar +1 för varje varv
         lengd++;
