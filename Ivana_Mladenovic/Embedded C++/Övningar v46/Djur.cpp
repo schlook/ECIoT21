@@ -13,11 +13,10 @@ class DäggDjur
         void hämtaNamn(std::string n){std::cout<<"Namn: "<<n<<std::endl;}
         void hämtaKön(std::string k){std::cout<<"K\x94n: "<<k<<std::endl;}
         void hämtaÅlder(int n){std::cout<<"\x8Flder: "<<n<<std::endl;}
-        double mataDjur(std::string mat, double g)
+        void mataDjur(std::string mat, double g)
         {
             std::cout<<"P\x86 menyn finns idag: "<<mat<<std::endl;
             this->vikt=(vikt+(g/100));
-            return this->vikt;
         }
         
 };
@@ -32,11 +31,10 @@ class Fågel
         void hämtaNamn(std::string n){std::cout<<"Namn: "<<n<<std::endl;}
         void hämtaKön(std::string k){std::cout<<"K\x94n: "<<k<<std::endl;}
         void hämtaÅlder(int n){std::cout<<"\x8Flder: "<<n<<std::endl;}
-        double mataDjur(std::string mat, double g)
+        void mataDjur(std::string mat, double g)
         {
             std::cout<<"P\x86 menyn finns idag: "<<mat<<std::endl;
             this->vikt=(vikt+(g/100));
-            return this->vikt;
         }
     
 };
@@ -51,11 +49,10 @@ class GrodDjur
         void hämtaNamn(std::string n){std::cout<<"Namn: "<<n<<std::endl;}
         void hämtaKön(std::string k){std::cout<<"K\x94n: "<<k<<std::endl;}
         void hämtaÅlder(int n){std::cout<<"\x8Flder: "<<n<<std::endl;}
-        double mataDjur(std::string mat, double g)
+        void mataDjur(std::string mat, double g)
         {
             std::cout<<"P\x86 menyn finns idag: "<<mat<<std::endl;
             this->vikt=(vikt+(g/100));
-            return this->vikt;
         }
         
 };
@@ -124,7 +121,7 @@ class Duva : public Fågel
         void ljud(){std::cout<<"Duvan pratar: Ko-koo-ko ko-koo!"<<std::endl;}
         void hämtaVikt(double kg)
         {
-            
+            //
             std::cout<<"Vikt: "<<this->vikt+kg<<"kg"<<std::endl;
             if(vikt>2.5)
             {
@@ -141,7 +138,9 @@ int main(void)
     hund.ljud();
     hund.hämtaKön("hane");
     hund.hämtaÅlder(10);
+    //tar emot typ av mat och mängd i gram
     hund.mataDjur("Biff", 2000);
+    //tar emot vikten som beräknas efter måltiden
     hund.hämtaVikt(7);
     std::cout<<std::endl;
     Katt katt;
@@ -167,16 +166,16 @@ int main(void)
     papegoja.ljud();
     papegoja.hämtaKön("hane");
     papegoja.hämtaÅlder(10);
-    papegoja.mataDjur("Kex", 0.8);
-    papegoja.hämtaVikt(2);
+    papegoja.mataDjur("Kex", 500);
+    papegoja.hämtaVikt(1);
     std::cout<<std::endl;
     Duva duva;
     duva.hämtaNamn("Sanna");
     duva.ljud();
     duva.hämtaKön("hona");
     duva.hämtaÅlder(2);
-    duva.mataDjur("Fr\x94mix", 3);
-    duva.hämtaVikt(1);
+    duva.mataDjur("Fr\x94mix", 30);
+    duva.hämtaVikt(0.7);
     std::cout<<std::endl;
     return 0;
 }
