@@ -1,0 +1,2 @@
+all: main.c ovning10.c
+    gcc main.c ovning10.c -o ovning10.exe
