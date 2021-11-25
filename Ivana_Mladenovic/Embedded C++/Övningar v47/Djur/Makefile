@@ -1,2 +1,2 @@
-main.exe: .\Övningdjur.cpp
-	gpp .\Övningdjur.cpp -o Ovningdjur.exe
+main.exe: .\Ovningdjur.cpp
+	g++ .\Ovningdjur.cpp -o Ovningdjur.exe
