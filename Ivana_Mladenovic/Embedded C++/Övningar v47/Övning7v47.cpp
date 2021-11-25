@@ -11,13 +11,13 @@ class Distans
             std::cout<<std::endl;
             std::cout<<"Ange inches: ";
             
-            if(inch>=12.0)
+            if(inch<12.0)
             {
-                throw inch;
+                std::cin>>this->inch;
             }
             else
             {
-                std::cin>>this->inch;
+                throw;
             }
             std::cout<<std::endl;
 
@@ -40,11 +40,11 @@ int main(void)
     {
         distans.hämtaDistans();
     }
-    catch(double )
+    catch(double err)
     {
-        std::cerr <<<< '\n';
+        std::cerr <<"Du skrev in "<<err<<" inches!"<<std::endl;
     }
     
-    
+    distans.visaDistans();
     return 0;
 }
