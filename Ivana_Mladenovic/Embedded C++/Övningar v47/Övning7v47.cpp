@@ -10,14 +10,12 @@ class Distans
             std::cin>>this->foot;
             std::cout<<std::endl;
             std::cout<<"Ange inches: ";
-            
-            if(inch<12.0)
+            std::cin>>this->inch;
+            //om inches är större eller lika med 12
+            if(inch>=12.0)
             {
-                std::cin>>this->inch;
-            }
-            else
-            {
-                throw;
+                //kastar 1.2 error
+                throw 1.2;
             }
             std::cout<<std::endl;
 
@@ -36,10 +34,12 @@ class Distans
 int main(void)
 {
     Distans distans;
+    //provar metoden hämtaDistans
     try
     {
         distans.hämtaDistans();
     }
+    //fångar errorn som blev kastad
     catch(double err)
     {
         std::cerr <<"Du skrev in "<<err<<" inches!"<<std::endl;
