@@ -18,11 +18,11 @@ class Temperatur
             cout<<"Mätningar: "<<endl;
             //loppar igenom vektorn
             for (auto t : this->temp)
-        {
-            //med hjälp av first kallar man första variabeln tillhörande 'pair', second kallar på andra
-            cout << "Veckodag: " << t.first << std::endl
-                 << "Temperatur: " << t.second << std::endl;
-        }
+            {
+                //med hjälp av first kallar man första variabeln tillhörande 'pair', second kallar på andra
+                cout << "Veckodag: " << t.first << std::endl
+                     << "Temperatur: " << t.second << std::endl;
+            }
         }
     private:
         //med hjälp av pair kan vecktorn lagra två olika datatyper
