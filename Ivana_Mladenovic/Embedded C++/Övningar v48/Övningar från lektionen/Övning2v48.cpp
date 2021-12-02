@@ -23,7 +23,7 @@ class Temperatur
                 cin>>svar;
                 //om svar är n eller N går vi ut ur loopen
                 if(svar=='n' || svar=='N')
-                    break;
+                    break;//avbryter loopen
             };
         }
         void visa()
