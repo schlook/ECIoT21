@@ -21,7 +21,9 @@ public:
             suffix = "°C";
         }
     }
-    void mätare(string dag, double temp) { par.emplace_back(dag, temp); } // metod för att ange dag och temp
+    /* metod för att ange dag och temp, tar emot 2 argument, string och double, 
+    emplace_back måste användas vid pair för att placera längst back. (annars används push_back vid vectorer) */
+    void mätare(string dag, double temp) { par.emplace_back(dag, temp); } 
     void utskrift() // metod som skriver ut allt innehåll från vectorn
     { 
         for(auto i : par) // auto ges namnet 'i' och går igenom vectorn 'par' början till slut. i=0, i=1 osv
