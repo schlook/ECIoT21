@@ -1,6 +1,5 @@
 #include <iostream>
-#include <fstream>
-#include <cstring>
+#include <fstream> // biblioteket fstream för att använda ifstream och ofstream
 
 class Bank
 {
@@ -86,10 +85,10 @@ void gränssnitt() // separat funktion för att hantera gränssnitt, dvs mellanr
 
 int main()
 {
-    short int tempPin; 
+    short int tempPin; // användarens inmatningspin
     bool loginAttempt; // boolean som tilldelas av metoden 'login'
-    short int val;
-    Inlogg inlogg;
+    short int val; // meny valen
+    Inlogg inlogg; // skapar objekt för att kalla på login med.
 
     std::cout << "*************************************** ~Välkommen till Banken!~ ***************************************" << std::endl;
  
@@ -100,32 +99,32 @@ int main()
 
             loginAttempt = inlogg.login(tempPin); // loginAttempt tilldelas bool som metoden login returnerar
             
-            if(loginAttempt == true) 
+            if(loginAttempt == true) // vid lyckat inloggningsförsök
             { 
                 gränssnitt(); std::cout << "Inloggning lyckades" << std::endl; break; // om true bryts loopen
             }
 
-            else if (loginAttempt == false && i != 2)
+            else if (loginAttempt == false && i != 2) // misslyckat inloggninsförsök till och med sista
             {
                 gränssnitt(); 
                 std::cout << "Felaktigt pinkod, försök igen.." << std::endl;
-                if (i == 1)
+                if (i == 1) // vid sista försöket
                 {   
                     gränssnitt(); 
                     std::cout << "Sista försöket" << std::endl;
                 }
             }
-            if (i == 2) 
+            if (i == 2) // vid samtliga misslyckade inloggningförsök
             { 
                 gränssnitt(); 
                 std::cout << "Du har anget felaktig pinkod " << i + 1 << " gånger. Inloggningsförsök misslyckades." << std::endl; 
-                exit(1); // vid 3 fel försök stängs programmet
+                exit(1); // vid 3 misslyckade inloggningsförsök stängs programmet
             }
         }
     
     while (loginAttempt == true) // meny som körs vid lyckad inloggning
     {
-        Bank bank;
+        Bank bank; // när rätt pinkod skrivs in, körs konstruktorn dvs så hämtas saldo från fil.
         gränssnitt(); 
         std::cout << "Vad vill du göra: " << std::endl;
         gränssnitt(); 
@@ -141,19 +140,19 @@ int main()
 
         switch (val) // meny, val
         {
-        case 1:
-            bank.seSaldo();
+        case 1: // se saldo
+            bank.seSaldo(); // val 1 kallar på seSaldo
             break;
-        case 2:
+        case 2: // insättning
             bank.insättning();
             break;
-        case 3:
+        case 3: // uttag
             bank.uttag();
             break;
-        case 4:
+        case 4: // avsluta
             std::cout << "*************************************** ~Tack och välkommen tillbaka!~ ***************************************" << std::endl;
             exit(1);
-        default:
+        default: // om annan inmatning än 1-4, felmedelande och menyn körs igen
             gränssnitt();
             std::cout << "Du har gjort ett felaktigt val, försök igen" << std::endl;
             break;
