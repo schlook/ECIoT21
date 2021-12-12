@@ -12,9 +12,9 @@
 
 int main()
 {
-    /* kön för inmatarens fråga om "pojke" eller "flicka"
-    namn är det namn som matas in medans 'person' är namnen i listan*/
-    std::string kön, namn, person; 
+    /* gender för inmatarens fråga om "pojke" eller "flicka"
+    namn är det namn som matas in medans 'person' är namnen i listan */
+    std::string gender, namn, person; 
     std::ifstream inputFile; // ifstreamen 'inputFile' som öppnar våra filer
     bool _bool; // hanterar om de varit stygga (0) eller snälla (1)
     bool found = 1; // 1 = false, om inte namn hittades i listorna för då ändras den till '0', true
@@ -22,12 +22,12 @@ int main()
     std::cout << "******************************** ~Välkommen till Tomtens snäll- och stygg-lista~ ********************************" << std::endl;
     sleep(2);
 
-    std::cout << "\nÄr du 'pojke' eller 'flicka': "; std::cin >> kön;
-    if(kön.compare("pojke") == 0) // jämför inmatad variabel 'kön' men "pojke", 0 = true
+    std::cout << "\nÄr du 'pojke' eller 'flicka': "; std::cin >> gender;
+    if(gender.compare("pojke") == 0) // jämför inmatad variabel 'gender' men "pojke", 0 = true
     {
-        inputFile.open("pojknamn.txt"); // om kön och "pojke" stämmer överens öppnas filen "pojknamn.txt"
+        inputFile.open("pojknamn.txt"); // om gender och "pojke" stämmer överens öppnas filen "pojknamn.txt"
     }
-    else if(kön.compare("flicka") == 0) // kontrollerar om kön stämmer överens med "flicka"
+    else if(gender.compare("flicka") == 0) // kontrollerar om gender stämmer överens med "flicka"
     {
         inputFile.open("flicknamn.txt");
     }
@@ -55,15 +55,15 @@ int main()
         if (found == 1) // efter whileloopen kontrolleras om namn stämde överens med någon från listan. Dvs om found fortfarande är 1 (false)
         {
             /* och kastar, 'invalid_argument' är namnet på vår exception. Kan egentligen döpas till vad som helst.
-            kastar tillsammans med extra informationen dvs medelandet*/
+            kastar tillsammans med extra informationen dvs medelandet */
             throw std::invalid_argument("\nTomten känner inte igen dig, detta måste tas upp vid nästa nisse-möte!"); 
         }
         inputFile.close(); // sist av allt stängs filen, dock endast om den INTE throwat, isf gick den direkt från throw --> catch.
     }
-    catch (std::invalid_argument &ex) // tar emot det som kastades. invalid_argument är namnet på exceptionet och &ex för att kunna avända .what()
+    catch (std::invalid_argument &ex) // tar emot det som kastades. invalid_argument är namnet på exceptionet och &ex står för medelandet, används med .what()
     {
         /* std::cerr = standard error stream, strömmen för errorutskrift 
-        ex.what() anropas när man vill ha med den text som gav som extra information iom throw*/
+        ex.what() anropas när man vill ha med den text som angavs som extra information iom throw */
         std::cerr << ex.what() << std::endl; // skriver ut: Tomten känner inte igen dig...
         inputFile.close(); // utan denna hade filen fortfarande varit öppen när programmet avslutats och den throwat / catchat
     }
