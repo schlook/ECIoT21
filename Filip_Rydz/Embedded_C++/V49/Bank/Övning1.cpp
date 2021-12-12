@@ -33,7 +33,7 @@ public:
         std::cout << "Ange hur mycket du vill ta ut: "; std::cin >> saldoUt;
         if (saldoUt > saldo) // om uttag överstiger saldot körs if och felmedelande ges
         {
-            std::cout << "Du har inte teckning så det räcker!" << std::endl;
+            std::cout << "Du har inte täckning så det räcker!" << std::endl;
             std::cin.ignore(); // ska rensa strömmen? likt fflush... om jag förstått rätt
         }
         else // om täckning finns
@@ -45,21 +45,22 @@ public:
             skrivaSaldo(saldo); // anropar metoden och skriver över det nya saldot
         }
     } 
-    void skrivaSaldo(double cash) // metoden för att skriva över nya saldot till filen, tar emot det nya saldot som argument
+    void skrivaSaldo(double nyttSaldo) // metoden för att skriva över nya saldot till filen, tar emot det nya saldot som argument
     {
         skrivÖver.open("saldo.txt");
-        skrivÖver << cash;
+        skrivÖver << nyttSaldo;
         skrivÖver.close(); 
     }
     void log(double transaktion, char opp) // metoden log, tar emot transaktionen och en opperator dvs '+' eller '-'
     {
         _log.open("log.txt", std::ios::app); // ios::append för att skriva in fler än ett värde, utan den hade värdet bara skrivits över varje gång log kallats
-        _log << opp << transaktion << std::endl; // opp (+/-)
+        _log << opp << transaktion << std::endl; // opp = (+/-)
         _log.close();
 
 
     }
 };
+
 class Inlogg : public Bank // Skapar en ny klass härled till basklassen Bank, denna sköter login
 {
 private:
@@ -78,6 +79,7 @@ public:
         else { return false; } // om de inte stämmer returneras false
     }    
 };
+
 void gränssnitt() // separat funktion för att hantera gränssnitt, dvs mellanrum/tabulur vid utskrift. Om jag vill ändra gränssnittet är det lättare att ändra denna en alla enkskiljda utskrifter
 {
     std::cout << "\n\t\t\t\t\t";
