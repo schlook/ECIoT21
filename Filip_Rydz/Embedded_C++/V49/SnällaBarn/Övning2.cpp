@@ -1,6 +1,6 @@
 #include <iostream>// standard bibliotek
 #include <fstream> // för att kunna öppna filer (std::ifstream
-//#include <string>
+#include <string>
 #include <stdexcept> // try/throw/catch
 
 // för att använda sleep
@@ -43,23 +43,24 @@ int main()
         {
             if (person == namn) // om något namn från listan stämmer överens med det vi matade in stannar den där och går vidare med det nedanför
             {
-                found = 0; // namn hittades därför ändras found till 0, dvs true
                 if(_bool == 0) // om boolean intill namnet i listan är '0' körs denna
                 {
                     std::cout << "\nTomten säger att du har varit stygg i år, det blir inga julklappar för dig " << namn << "!" << std::endl;
                 } // om inte dvs '1' körs denna
                 else { std::cout << "\nTomten säger att du har varit snäll! ho, ho ho! God jul på dig " << namn << "!" << std::endl; }
+                
+                found = 0; // namn hittades därför ändras found till 0, dvs true
             }
         }
-            if (found != 0) // efter whileloopen kontrolleras om namn stämde överens med någon från listan. Dvs om found fortfarande är 1 (false)
-            {
-                /* och kastar, 'invalid_argument' är namnet på vår exception. Kan egentligen döpas till vad som helst.
-                kastar tillsammans med extra informationen dvs medelandet*/
-                throw std::invalid_argument("\nTomten känner inte igen dig, detta måste tas upp vid nästa nisse-möte!"); 
-            }
+        if (found == 1) // efter whileloopen kontrolleras om namn stämde överens med någon från listan. Dvs om found fortfarande är 1 (false)
+        {
+            /* och kastar, 'invalid_argument' är namnet på vår exception. Kan egentligen döpas till vad som helst.
+            kastar tillsammans med extra informationen dvs medelandet*/
+            throw std::invalid_argument("\nTomten känner inte igen dig, detta måste tas upp vid nästa nisse-möte!"); 
+        }
         inputFile.close(); // sist av allt stängs filen, dock endast om den INTE throwat, isf gick den direkt från throw --> catch.
     }
-    catch (std::invalid_argument &ex) // tar emot det som kastades. invalid_argument är namnet på exceptionet och &ex för att kunna avända ex.what()
+    catch (std::invalid_argument &ex) // tar emot det som kastades. invalid_argument är namnet på exceptionet och &ex för att kunna avända .what()
     {
         /* std::cerr = standard error stream, strömmen för errorutskrift 
         ex.what() anropas när man vill ha med den text som gav som extra information iom throw*/
