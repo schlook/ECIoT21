@@ -54,7 +54,7 @@ int main()
         }
         if (found == 1) // efter whileloopen kontrolleras om namn stämde överens med någon från listan. Dvs om found fortfarande är 1 (false)
         {
-            /* och kastar, 'invalid_argument' är namnet på vår exception. Kan egentligen döpas till vad som helst.
+            /* och kastar, använder oss av exceptionen 'invalid_argument'.
             kastar tillsammans med extra informationen dvs medelandet */
             throw std::invalid_argument("\nTomten känner inte igen dig, detta måste tas upp vid nästa nisse-möte!"); 
         }
