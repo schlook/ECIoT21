@@ -1,6 +1,6 @@
-import math
-import time
-import sys
+import math # math.pow(x, y)
+import time # för time.sleep(x)
+import sys # sys.stdout.write()
 
 # olika utskriftssträngar som används som argument vid anrop av funktionen 'utskrift'
 str1 = "Du kommer nu att bli ombedd att ange antal år som du vill beräkna avkastningen på din aktie"
