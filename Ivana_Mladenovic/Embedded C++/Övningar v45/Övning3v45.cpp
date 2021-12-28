@@ -6,7 +6,8 @@ int main(void)
     //rensar redan inställda indrag som ligger till höger
     //std::cout << std::resetiosflags(std::ios::right);
     //ställer in indrag, här till vänster
-    std::cout << std::setiosflags(std::ios::left);
+    
+    std::cout<<std::setiosflags(std::ios::left);
     //setw()tar emot storlek för indrag
     std::cout << std::setw(15)<<"Förnamn" <<
     std::setw(15)<<"Efrernamn" <<
