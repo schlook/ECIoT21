@@ -5,5 +5,5 @@ for x in range(antal):
     tal=float(input("Ange ett reellt tal: "))
     # för varje varv multipliceras ett nytt tal till variabeln produkt
     produkt=produkt*tal
-# printar ut medelvärdet
+# printar ut produkten
 print("Produkten av numren är: ",produkt)
