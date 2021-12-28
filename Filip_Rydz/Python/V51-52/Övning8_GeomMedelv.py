@@ -14,8 +14,8 @@ def välkommen():
     print("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Välkommen till EC Investor!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n")
     print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Din aktiehandel på nätet!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n")
 
-# funktionen tar emot ett argument, dvs en sträng, och med while-loopen skriver den ut en bokstav i taget med 1 millesekunds
-# mellanrum. len() är storleken strängen. sys.stdout.write() istället för print() för att den skriver ut text utan radbrytning
+'''funktionen tar emot ett argument, dvs en sträng, och med while-loopen skriver den ut en bokstav i taget med 1 millesekunds
+mellanrum. len() är storleken på strängen. sys.stdout.write() istället för print() för att den skriver ut text utan radbrytning'''
 def utskrift(str):
     i = 0
     while i < len(str):
