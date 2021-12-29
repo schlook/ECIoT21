@@ -72,5 +72,5 @@ for x in range(i):
 # gMedel dvs geometrisk medelvärde
 gMedel = math.pow(medelvärde, 1 / i)
 # round(gMedel, 2) avrundar till 2 decimaler
-print("\nDen ""faktiska"" avkastningen, dvs det geometriska medelvärdetden är:", round(gMedel, 2), "%")
+print("\nDen ""faktiska"" avkastningen, dvs det geometriska medelvärdet är:", round(gMedel, 2), "%")
 # https://www.finansakademin.se/artiklar/aritmetisk-geometrisk-avkastning, https://sv.wikipedia.org/wiki/Geometriskt_medelv%C3%A4rde
