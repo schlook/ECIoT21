@@ -1,3 +1,7 @@
+"""
+Övningsuppgift 11
+Skriv ett program för att visa alla heltal inom intervallet 100-200 vars siffror är ett jämnt tal
+"""
 #for-loop loppar från 100-199
 for x in range(100, 200):
     summa=0

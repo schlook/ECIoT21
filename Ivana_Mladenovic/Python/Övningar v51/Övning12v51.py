@@ -1,3 +1,9 @@
+"""
+Övningsuppgift 12
+Skriv ett program för att kontrollera om det givna heltal är ett primtal eller inte.
+Be användaren skriva in ett tal och ta sedan reda på om det talet är ett primtal eller inte
+"""
+
 tal = int(input("Ange ett heltal: "))
 # det är ett primtal
 primtal = True
