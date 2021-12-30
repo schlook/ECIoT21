@@ -1,3 +1,5 @@
+'''Programmet kontrollerar om ett tal är primtal'''
+
 import math # för att vi använder math.sqrt()
 # ber om ett tal
 tal = int(input("Ange ett heltal: "))
@@ -16,10 +18,10 @@ while min <= max:
     min += 1
 # om det påvisats 1 eller fler där divisionsrest = 0 är det inte ett primtal
 if kontroll > 0:
-    print(tal, "är inte ett heltal")
+    print(tal, "är inte ett primtal")
 # och om talet varit 0 eller 1 är det heller inget primtal
 elif tal == 0 or tal == 1:
-    print(tal, "är inte ett heltal")
+    print(tal, "är inte ett primtal")
 # övriga är primtal
 else:
-    print(tal, "är ett heltal")
+    print(tal, "är ett primtal")
