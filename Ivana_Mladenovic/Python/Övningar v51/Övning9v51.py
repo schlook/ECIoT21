@@ -1,3 +1,9 @@
+"""
+Övningsuppgift 9
+Skriv ett program för att hitta summan av siffrorna i ett heltal med while-loop.
+Det vill säga 3 + 4 + 5
+Skriv ut summan sedan.
+"""
 tal = int(input("Ange ett heltal: "))
 summa = 0
 # while-loopen körs tills talet blir 0

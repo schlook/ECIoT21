@@ -1,3 +1,9 @@
+"""
+Övningsuppgift 8
+Skriv ett program för att hitta hitta det geometriska medelvärdet av 'n' tal
+Talen skall vara flyttal
+Fråga användaren efter att ange antalet nummer.
+"""
 antal=int(input("Ange antalet värden: "))
 medelv=1 # sätter värdet till 1 då det ej går att multiplicera med 0
 # med funktionen range() loopas koden igenom ett antal ggr, här det värde i variabel antal
