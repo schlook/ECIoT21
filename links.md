@@ -76,6 +76,12 @@
 
 
 ## HMI, Smart Server och IoT
+
 [![HMI SMARTSERVER](http://img.youtube.com/vi/kOGYYBxT1TA/0.jpg)](https://www.youtube.com/watch?v=kOGYYBxT1TA&list=PLCIyM9UeTXJg5EtEkd2tTlOeLE_drnEGJ&index=4 "Smart Server configuration in Human Machine Interface using Internet of Thing (IOT)")
 
- [IoT2000 - FAQ, Manulaer med mera](https://support.industry.siemens.com/tf/ww/en/threads/308/?page=0&pageSize=10)
+[IoT2000 - FAQ, Manulaer med mera](https://support.industry.siemens.com/tf/ww/en/threads/308/?page=0&pageSize=10)
+
+
+# Node Red
+## Vad är Node Red?
+[![NODE RED](http://img.youtube.com/vi/vYreeoCoQPI/0.jpg)](https://www.youtube.com/watch?v=vYreeoCoQPI "Node-RED Introduction")
