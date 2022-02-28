@@ -19,7 +19,7 @@
 [![GE web HMI baserat på ifix](http://img.youtube.com/vi/zYjBNdPk06U/0.jpg)](https://www.youtube.com/watch?v=zYjBNdPk06U&ab_channel=GEDigital "What’s New On-Premise to Cloud in HMI/SCADA?")
 
 
-## WebFacotry 
+## WebFactory 
 [Simulator, Beijer electronics](https://demo.i4scada.de/process.html)
 
 # WebPort
