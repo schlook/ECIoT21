@@ -62,3 +62,20 @@
 
 ## Control Builder
 [![Control Builder](http://img.youtube.com/vi/pHSAPbwuI34/0.jpg)](https://www.youtube.com/watch?v=pHSAPbwuI34&list=PLLOq6fSyEfG0l2_ZYBp9yMdRq-h6sbXEd "Compact Control Builder - Control Diagram Editor - Part 1. Getting started")
+
+
+# Simantic IoT
+## Simatic IOT2000
+[![Simatic IOT2000](http://img.youtube.com/vi/0hJSrAgzqFw/0.jpg)](https://www.youtube.com/watch?v=0hJSrAgzqFw "Simatic IOT2000 - WHAT IS IT !!!")
+
+## Simantic IoT2040
+[![Simatic IOT2040](http://img.youtube.com/vi/5LLJO0HRx4Q/0.jpg)](https://www.youtube.com/watch?v=5LLJO0HRx4Q "SIMATIC IOT2040 from Siemens - The IoT Gateway")
+
+## Hur man sätter upp IoT2040
+[![Simatic IOT2040](http://img.youtube.com/vi/e7Q1Sk9Dk4A/0.jpg)](https://www.youtube.com/watch?v=e7Q1Sk9Dk4A&ab_channel=Electro-Matic "How To Set Up A Siemens Simatic IoT2040")
+
+
+## HMI, Smart Server och IoT
+[![HMI SMARTSERVER](http://img.youtube.com/vi/kOGYYBxT1TA/0.jpg)](https://www.youtube.com/watch?v=kOGYYBxT1TA&list=PLCIyM9UeTXJg5EtEkd2tTlOeLE_drnEGJ&index=4 "Smart Server configuration in Human Machine Interface using Internet of Thing (IOT)")
+
+ [IoT2000 - FAQ, Manulaer med mera](https://support.industry.siemens.com/tf/ww/en/threads/308/?page=0&pageSize=10)
